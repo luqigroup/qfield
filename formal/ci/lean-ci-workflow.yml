@@ -1,0 +1,46 @@
+name: Lean formal proofs (quadrature field)
+
+# Machine-checks the Lean 4 + mathlib formalization of the paper's theoretical
+# claims under `formal/`. A green run = the Lean kernel accepted the proofs.
+# The job downloads the PREBUILT mathlib olean cache (`lake exe cache get`), so
+# it never compiles mathlib from source. Copy to .github/workflows/lean.yml to enable.
+
+on:
+  push:
+    paths:
+      - 'formal/**'
+      - '.github/workflows/lean.yml'
+  pull_request:
+    paths:
+      - 'formal/**'
+      - '.github/workflows/lean.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build and kernel-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Reject sorry / admit / native_decide in the sources
+        run: |
+          if grep -RnE '\b(sorry|admit)\b|native_decide' formal/QuadratureField/*.lean formal/QuadratureField.lean; then
+            echo "::error::Found sorry/admit/native_decide in formal sources"
+            exit 1
+          fi
+          echo "No sorry/admit/native_decide found."
+
+      - name: Build (elan + mathlib cache + lake build)
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: formal
+          use-mathlib-cache: true
+          build-args: ""
+
+      - name: Axiom audit
+        run: |
+          cd formal
+          lake env lean Axioms.lean | tee axioms.txt
+          if grep -q "sorryAx" axioms.txt; then echo "::error::sorryAx found"; exit 1; fi

@@ -1,0 +1,218 @@
+{
+ "what": "training diagnosis: schedule, capacity, data",
+ "M": 32,
+ "n_obs": 8,
+ "oracle_depth": 345.6565289946478,
+ "arms": {
+  "_sw_b12long": {
+   "depth": 274.0018947959797,
+   "move_only": 1.3972995445185454,
+   "n_params": 921540,
+   "last_step": 55800,
+   "n_steps": 200000,
+   "hidden": 64,
+   "n_blocks": 12,
+   "n_train_obs": null
+  },
+  "_sw_b4": {
+   "depth": 200.45735986968737,
+   "move_only": 1.4481730288593893,
+   "n_params": 336324,
+   "last_step": 24000,
+   "n_steps": 24000,
+   "hidden": 64,
+   "n_blocks": 4,
+   "n_train_obs": null
+  },
+  "_sw_b4lr3": {
+   "depth": 212.85150158363655,
+   "move_only": 1.4715566798384108,
+   "n_params": 336324,
+   "last_step": 33000,
+   "n_steps": 60000,
+   "hidden": 64,
+   "n_blocks": 4,
+   "n_train_obs": null
+  },
+  "_sw_b4lr4": {
+   "depth": 247.3538284359346,
+   "move_only": 1.4932821703358523,
+   "n_params": 336324,
+   "last_step": 55800,
+   "n_steps": 60000,
+   "hidden": 64,
+   "n_blocks": 4,
+   "n_train_obs": null
+  },
+  "_sw_b5lr4": {
+   "depth": 220.83102091286358,
+   "move_only": 1.6157531638447489,
+   "n_params": 409476,
+   "last_step": 32400,
+   "n_steps": 60000,
+   "hidden": 64,
+   "n_blocks": 5,
+   "n_train_obs": null
+  },
+  "_sw_b6lr3": {
+   "depth": 239.08399750465196,
+   "move_only": 1.275070719115633,
+   "n_params": 482628,
+   "last_step": 29800,
+   "n_steps": 60000,
+   "hidden": 64,
+   "n_blocks": 6,
+   "n_train_obs": null
+  },
+  "_sw_b6lr4": {
+   "depth": 279.19466320405786,
+   "move_only": 1.3736231503333793,
+   "n_params": 482628,
+   "last_step": 60000,
+   "n_steps": 60000,
+   "hidden": 64,
+   "n_blocks": 6,
+   "n_train_obs": null
+  },
+  "_sw_b6lr5": {
+   "depth": 262.9884519307136,
+   "move_only": 1.4711296322808611,
+   "n_params": 482628,
+   "last_step": 75800,
+   "n_steps": 90000,
+   "hidden": 64,
+   "n_blocks": 6,
+   "n_train_obs": null
+  },
+  "_sw_b8long": {
+   "depth": 287.7290166658963,
+   "move_only": 1.9653254868733256,
+   "n_params": 628932,
+   "last_step": 87400,
+   "n_steps": 200000,
+   "hidden": 64,
+   "n_blocks": 8,
+   "n_train_obs": null
+  },
+  "_sw_b8lr4": {
+   "depth": 269.1751139734831,
+   "move_only": 2.0100394742362178,
+   "n_params": 628932,
+   "last_step": 60000,
+   "n_steps": 60000,
+   "hidden": 64,
+   "n_blocks": 8,
+   "n_train_obs": null
+  },
+  "_sw_base": {
+   "depth": 164.0876704813296,
+   "move_only": 1.5326254877986454,
+   "n_params": 263172,
+   "last_step": 8000,
+   "n_steps": 8000,
+   "hidden": 64,
+   "n_blocks": 3,
+   "n_train_obs": null
+  },
+  "_sw_big": {
+   "depth": 203.76867163716904,
+   "move_only": 1.6602051917345366,
+   "n_params": 1055620,
+   "last_step": 24000,
+   "n_steps": 24000,
+   "hidden": 128,
+   "n_blocks": 4,
+   "n_train_obs": null
+  },
+  "_sw_d16k": {
+   "depth": 192.55838978533,
+   "move_only": 1.6449417852651629,
+   "n_params": 263172,
+   "last_step": 24000,
+   "n_steps": 24000,
+   "hidden": 64,
+   "n_blocks": 3,
+   "n_train_obs": 16000
+  },
+  "_sw_d1k": {
+   "depth": 207.89560589171785,
+   "move_only": 1.6347535841678864,
+   "n_params": 263172,
+   "last_step": 24000,
+   "n_steps": 24000,
+   "hidden": 64,
+   "n_blocks": 3,
+   "n_train_obs": 1000
+  },
+  "_sw_d4k": {
+   "depth": 196.68325690714119,
+   "move_only": 1.1339193075645888,
+   "n_params": 263172,
+   "last_step": 24000,
+   "n_steps": 24000,
+   "hidden": 64,
+   "n_blocks": 3,
+   "n_train_obs": 4000
+  },
+  "_sw_h128": {
+   "depth": 194.60588401218837,
+   "move_only": 1.9803227700500323,
+   "n_params": 802820,
+   "last_step": 24000,
+   "n_steps": 24000,
+   "hidden": 128,
+   "n_blocks": 3,
+   "n_train_obs": null
+  },
+  "_sw_h192": {
+   "depth": 121.80432100722479,
+   "move_only": 1.63757647288758,
+   "n_params": 1661956,
+   "last_step": 19400,
+   "n_steps": 24000,
+   "hidden": 192,
+   "n_blocks": 3,
+   "n_train_obs": null
+  },
+  "_sw_lr1e3": {
+   "depth": 116.0775306130769,
+   "move_only": 1.9507243500540496,
+   "n_params": 263172,
+   "last_step": 18800,
+   "n_steps": 24000,
+   "hidden": 64,
+   "n_blocks": 3,
+   "n_train_obs": null
+  },
+  "_sw_lr1e4": {
+   "depth": 180.16668255819258,
+   "move_only": 1.606646104018742,
+   "n_params": 263172,
+   "last_step": 24000,
+   "n_steps": 24000,
+   "hidden": 64,
+   "n_blocks": 3,
+   "n_train_obs": null
+  },
+  "_sw_s24k": {
+   "depth": 173.1957888295192,
+   "move_only": 1.5075575256493257,
+   "n_params": 263172,
+   "last_step": 22200,
+   "n_steps": 24000,
+   "hidden": 64,
+   "n_blocks": 3,
+   "n_train_obs": null
+  },
+  "_sw_s48k": {
+   "depth": 173.1957888295192,
+   "move_only": 1.5075575256493257,
+   "n_params": 263172,
+   "last_step": 22200,
+   "n_steps": 48000,
+   "hidden": 64,
+   "n_blocks": 3,
+   "n_train_obs": null
+  }
+ }
+}

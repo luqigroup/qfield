@@ -1,0 +1,59 @@
+{
+ "what": "1 - c_rho in the whitened and ambient coordinates, at ONE bandwidth against ONE reference, on the SAME samples lifted between them.",
+ "renderer": "scripts/lv_harvest_diagnostics.py",
+ "sigma": 2.5544,
+ "n_samples": 16384,
+ "gate": "[0.3, 0.95]",
+ "cells": {
+  "family_q03": {
+   "whitened": 0.3132611008706965,
+   "ambient": 6.596596080488126e-08,
+   "ratio": 4748829.503102094,
+   "gate_pass_whitened": true
+  },
+  "family_q16": {
+   "whitened": 0.38767288009483614,
+   "ambient": 6.73129204153966e-07,
+   "ratio": 575926.4012056785,
+   "gate_pass_whitened": true
+  },
+  "family_q29": {
+   "whitened": 0.3819209059839046,
+   "ambient": 3.9808676868258175e-06,
+   "ratio": 95939.1107742224,
+   "gate_pass_whitened": true
+  },
+  "family_q43": {
+   "whitened": 0.40820696403476275,
+   "ambient": 1.5831401983912308e-05,
+   "ratio": 25784.637674514113,
+   "gate_pass_whitened": true
+  },
+  "family_q56": {
+   "whitened": 0.3893969298064729,
+   "ambient": 4.085122143937525e-05,
+   "ratio": 9532.075568030506,
+   "gate_pass_whitened": true
+  },
+  "family_q70": {
+   "whitened": 0.4102541687111233,
+   "ambient": 0.00011180943477306915,
+   "ratio": 3669.226747669229,
+   "gate_pass_whitened": true
+  },
+  "family_q97": {
+   "whitened": 0.3583157848332007,
+   "ambient": 0.09267598593313264,
+   "ratio": 3.866328275069357,
+   "gate_pass_whitened": true
+  },
+  "riabiz": {
+   "whitened": 0.4097184956740585,
+   "ambient": 0.0001351144981954766,
+   "ratio": 3032.3799528996446,
+   "gate_pass_whitened": true
+  }
+ },
+ "median_whitened": 0.3885349049506545,
+ "median_ambient": 2.834131171164378e-05
+}

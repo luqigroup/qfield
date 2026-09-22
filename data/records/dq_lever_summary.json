@@ -1,0 +1,790 @@
+{
+  "common_readable_M": 32,
+  "rows": [
+    {
+      "reference": "gaussian d=16",
+      "top_readable_M": 512,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "at_top": {
+        "M": 512,
+        "phi": 0.9616006779446993,
+        "move_gain": 1.4973810537159458,
+        "move_log_share": 0.1102019902575281,
+        "depth_reweight_dex": 1.4156764430866622,
+        "depth_warm_dex": 1.5910087768081114,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.6387786254841248,
+          "move_gain": 2.870639570139787,
+          "move_log_share": 0.5087491760032706,
+          "depth_reweight_dex": 0.44222655913470454,
+          "depth_warm_dex": 0.9002052261955062,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.764182546434329,
+          "move_gain": 2.9344149556959813,
+          "move_log_share": 0.42698151863584755,
+          "depth_reweight_dex": 0.627424054598247,
+          "depth_warm_dex": 1.0949455820422656,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.8526395709148943,
+          "move_gain": 2.78468219015944,
+          "move_log_share": 0.34846244378577945,
+          "depth_reweight_dex": 0.8316191225637413,
+          "depth_warm_dex": 1.276394759798484,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.928376459404177,
+          "move_gain": 2.044798474951612,
+          "move_log_share": 0.21341827287031903,
+          "depth_reweight_dex": 1.14494421413643,
+          "depth_warm_dex": 1.4555947267100284,
+          "move_is_a_loss": false
+        },
+        "512": {
+          "M": 512,
+          "phi": 0.9616006779446993,
+          "move_gain": 1.4973810537159458,
+          "move_log_share": 0.1102019902575281,
+          "depth_reweight_dex": 1.4156764430866622,
+          "depth_warm_dex": 1.5910087768081114,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "gaussian d=2",
+      "top_readable_M": 32,
+      "readable_M": [
+        32
+      ],
+      "at_top": {
+        "M": 32,
+        "phi": 0.9989522949906223,
+        "move_gain": 7.003194445103829,
+        "move_log_share": 0.220989163942227,
+        "depth_reweight_dex": 2.9797609795979585,
+        "depth_warm_dex": 3.8250571643870863,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.9989522949906223,
+          "move_gain": 7.003194445103829,
+          "move_log_share": 0.220989163942227,
+          "depth_reweight_dex": 2.9797609795979585,
+          "depth_warm_dex": 3.8250571643870863,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "gaussian d=32",
+      "top_readable_M": 512,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "at_top": {
+        "M": 512,
+        "phi": 0.8796766019464336,
+        "move_gain": 1.0492599877744655,
+        "move_log_share": 0.022203486081594632,
+        "depth_reweight_dex": 0.9196499116670398,
+        "depth_warm_dex": 0.9405330235650464,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.45141160313837747,
+          "move_gain": 2.079229587765039,
+          "move_log_share": 0.5493808766811757,
+          "depth_reweight_dex": 0.2607533823535479,
+          "depth_warm_dex": 0.5786558289694651,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.6340554080428698,
+          "move_gain": 1.5489906521292607,
+          "move_log_share": 0.30328542594240426,
+          "depth_reweight_dex": 0.436584666597152,
+          "depth_warm_dex": 0.6266334634777722,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.729273558464425,
+          "move_gain": 1.2634333445824282,
+          "move_log_share": 0.1517922972249646,
+          "depth_reweight_dex": 0.5674693251227731,
+          "depth_warm_dex": 0.669021659749392,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.8090016963467005,
+          "move_gain": 1.118839098548873,
+          "move_log_share": 0.06352118398514452,
+          "depth_reweight_dex": 0.7189704899108219,
+          "depth_warm_dex": 0.7677381245743169,
+          "move_is_a_loss": false
+        },
+        "512": {
+          "M": 512,
+          "phi": 0.8796766019464336,
+          "move_gain": 1.0492599877744655,
+          "move_log_share": 0.022203486081594632,
+          "depth_reweight_dex": 0.9196499116670398,
+          "depth_warm_dex": 0.9405330235650464,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "gaussian d=4",
+      "top_readable_M": 256,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "at_top": {
+        "M": 256,
+        "phi": 0.999891543679009,
+        "move_gain": 1.891319125040148,
+        "move_log_share": 0.06525148301171509,
+        "depth_reweight_dex": 3.9647451316025553,
+        "depth_warm_dex": 4.2415099457731955,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.9540320125300557,
+          "move_gain": 3.0916680530571288,
+          "move_log_share": 0.26819655103958323,
+          "depth_reweight_dex": 1.3375445097330614,
+          "depth_warm_dex": 1.8277373680503235,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.990230015414223,
+          "move_gain": 2.739576659450085,
+          "move_log_share": 0.17880763168226568,
+          "depth_reweight_dex": 2.010106121472346,
+          "depth_warm_dex": 2.44778957893895,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.9987636004506991,
+          "move_gain": 2.0938252668517165,
+          "move_log_share": 0.09939985920666745,
+          "depth_reweight_dex": 2.9078411619201177,
+          "depth_warm_dex": 3.228781598189203,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.999891543679009,
+          "move_gain": 1.891319125040148,
+          "move_log_share": 0.06525148301171509,
+          "depth_reweight_dex": 3.9647451316025553,
+          "depth_warm_dex": 4.2415099457731955,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [
+        512
+      ],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "gaussian d=8",
+      "top_readable_M": 512,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "at_top": {
+        "M": 512,
+        "phi": 0.9966814505983076,
+        "move_gain": 2.415147454233241,
+        "move_log_share": 0.13380302990058726,
+        "depth_reweight_dex": 2.479051712835042,
+        "depth_warm_dex": 2.8619953641150735,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.7904730011149481,
+          "move_gain": 7.399829916313252,
+          "move_log_share": 0.5615193721685093,
+          "depth_reweight_dex": 0.6787600074885561,
+          "depth_warm_dex": 1.5479817451579767,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.9099285271239481,
+          "move_gain": 6.495784144599398,
+          "move_log_share": 0.4373585581077469,
+          "depth_reweight_dex": 1.0454127354830454,
+          "depth_warm_dex": 1.8580443203173147,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.9658292857522683,
+          "move_gain": 5.182491416085369,
+          "move_log_share": 0.32763705736823817,
+          "depth_reweight_dex": 1.4663459433374189,
+          "depth_warm_dex": 2.1808845347690493,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.9885428125162781,
+          "move_gain": 3.458806912471185,
+          "move_log_share": 0.21732229290107266,
+          "depth_reweight_dex": 1.940921980118183,
+          "depth_warm_dex": 2.479848298365879,
+          "move_is_a_loss": false
+        },
+        "512": {
+          "M": 512,
+          "phi": 0.9966814505983076,
+          "move_gain": 2.415147454233241,
+          "move_log_share": 0.13380302990058726,
+          "depth_reweight_dex": 2.479051712835042,
+          "depth_warm_dex": 2.8619953641150735,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "gmm d=10",
+      "top_readable_M": 512,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "at_top": {
+        "M": 512,
+        "phi": 0.9996795394235101,
+        "move_gain": 0.9730241409295146,
+        "move_log_share": -0.0034104521525195742,
+        "depth_reweight_dex": 3.494225390376043,
+        "depth_warm_dex": 3.4823490057136826,
+        "move_is_a_loss": true
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.9228939168391519,
+          "move_gain": 8.890589703360295,
+          "move_log_share": 0.46023439349109396,
+          "depth_reweight_dex": 1.1129113576303329,
+          "depth_warm_dex": 2.061841925847067,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.9759780591918212,
+          "move_gain": 4.351667693425147,
+          "move_log_share": 0.28283536406683646,
+          "depth_reweight_dex": 1.619391907497976,
+          "depth_warm_dex": 2.258047631407324,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.9933297364898998,
+          "move_gain": 2.1034479398787367,
+          "move_log_share": 0.12923532023462309,
+          "depth_reweight_dex": 2.1758570088537774,
+          "depth_warm_dex": 2.4987887765958203,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.9982301393987121,
+          "move_gain": 1.3760658331856848,
+          "move_log_share": 0.0479604263796767,
+          "depth_reweight_dex": 2.752060938426617,
+          "depth_warm_dex": 2.890700150164292,
+          "move_is_a_loss": false
+        },
+        "512": {
+          "M": 512,
+          "phi": 0.9996795394235101,
+          "move_gain": 0.9730241409295146,
+          "move_log_share": -0.0034104521525195742,
+          "depth_reweight_dex": 3.494225390376043,
+          "depth_warm_dex": 3.4823490057136826,
+          "move_is_a_loss": true
+        }
+      },
+      "cond_limited_M": [],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "gmm d=32",
+      "top_readable_M": 512,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "at_top": {
+        "M": 512,
+        "phi": 0.9608105185672907,
+        "move_gain": 1.3900087724162429,
+        "move_log_share": 0.09227842915769131,
+        "depth_reweight_dex": 1.406830483202246,
+        "depth_warm_dex": 1.549848024319611,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.6426347510335533,
+          "move_gain": 6.963284228560046,
+          "move_log_share": 0.6534953427824415,
+          "depth_reweight_dex": 0.4468876815894357,
+          "depth_warm_dex": 1.2897018042353472,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.7811451352146929,
+          "move_gain": 4.594776394086259,
+          "move_log_share": 0.5009154265680581,
+          "depth_reweight_dex": 0.6598437952883226,
+          "depth_warm_dex": 1.3221081764778344,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.8627658372204505,
+          "move_gain": 3.1700952272216343,
+          "move_log_share": 0.36746011114168287,
+          "depth_reweight_dex": 0.8625377628291031,
+          "depth_warm_dex": 1.3636100711149037,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.9249890533400332,
+          "move_gain": 1.9611584327086469,
+          "move_log_share": 0.20637445273749197,
+          "depth_reweight_dex": 1.1248753535801528,
+          "depth_warm_dex": 1.4173880332610778,
+          "move_is_a_loss": false
+        },
+        "512": {
+          "M": 512,
+          "phi": 0.9608105185672907,
+          "move_gain": 1.3900087724162429,
+          "move_log_share": 0.09227842915769131,
+          "depth_reweight_dex": 1.406830483202246,
+          "depth_warm_dex": 1.549848024319611,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "gmm d=64",
+      "top_readable_M": 512,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "at_top": {
+        "M": 512,
+        "phi": 0.8664346017794082,
+        "move_gain": 1.1945674176525456,
+        "move_log_share": 0.08114483420472916,
+        "depth_reweight_dex": 0.8743060366823708,
+        "depth_warm_dex": 0.95151670168351,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.4269446375779249,
+          "move_gain": 2.4944144652120817,
+          "move_log_share": 0.621455846966612,
+          "depth_reweight_dex": 0.24180341916182752,
+          "depth_warm_dex": 0.6387720355054599,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.572176156897477,
+          "move_gain": 2.1754882729191976,
+          "move_log_share": 0.47792819447705753,
+          "depth_reweight_dex": 0.3687350153715363,
+          "depth_warm_dex": 0.7062917619199649,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.7049329289077421,
+          "move_gain": 1.8037452886434249,
+          "move_log_share": 0.3258171768560153,
+          "depth_reweight_dex": 0.5300792542102094,
+          "depth_warm_dex": 0.7862544639423434,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.8037667521999219,
+          "move_gain": 1.4776805646180216,
+          "move_log_share": 0.19340672890096067,
+          "depth_reweight_dex": 0.7072274082057548,
+          "depth_warm_dex": 0.8768079694517019,
+          "move_is_a_loss": false
+        },
+        "512": {
+          "M": 512,
+          "phi": 0.8664346017794082,
+          "move_gain": 1.1945674176525456,
+          "move_log_share": 0.08114483420472916,
+          "depth_reweight_dex": 0.8743060366823708,
+          "depth_warm_dex": 0.95151670168351,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "gmm_cncv d=10",
+      "top_readable_M": 512,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "at_top": {
+        "M": 512,
+        "phi": 0.9986907293732984,
+        "move_gain": 1.3765501342804631,
+        "move_log_share": 0.04593081956063891,
+        "depth_reweight_dex": 2.8829705753473194,
+        "depth_warm_dex": 3.0217626084721387,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.9188885776068721,
+          "move_gain": 4.514951716249513,
+          "move_log_share": 0.37503663581621305,
+          "depth_reweight_dex": 1.0909179826199304,
+          "depth_warm_dex": 1.7455710928666808,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.9583344110797112,
+          "move_gain": 4.456970604028776,
+          "move_log_share": 0.3198402627893125,
+          "depth_reweight_dex": 1.3802224752802046,
+          "depth_warm_dex": 2.0292622449844666,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.9831927124523762,
+          "move_gain": 3.614260652031094,
+          "move_log_share": 0.2392344029682915,
+          "depth_reweight_dex": 1.7745023697342694,
+          "depth_warm_dex": 2.3325218393916263,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.995140944942625,
+          "move_gain": 1.935709249799721,
+          "move_log_share": 0.11031089312558028,
+          "depth_reweight_dex": 2.3134481799699804,
+          "depth_warm_dex": 2.6002883053130663,
+          "move_is_a_loss": false
+        },
+        "512": {
+          "M": 512,
+          "phi": 0.9986907293732984,
+          "move_gain": 1.3765501342804631,
+          "move_log_share": 0.04593081956063891,
+          "depth_reweight_dex": 2.8829705753473194,
+          "depth_warm_dex": 3.0217626084721387,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "gmm_cncv d=32",
+      "top_readable_M": 512,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "at_top": {
+        "M": 512,
+        "phi": 0.9270737790738875,
+        "move_gain": 1.2074696371081963,
+        "move_log_share": 0.067167122165682,
+        "depth_reweight_dex": 1.1371162912150088,
+        "depth_warm_dex": 1.2189925100570629,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.5563654093493559,
+          "move_gain": 4.05871769264574,
+          "move_log_share": 0.6328395871460675,
+          "depth_reweight_dex": 0.35297459881001936,
+          "depth_warm_dex": 0.9613634434778874,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.7371218134011328,
+          "move_gain": 2.6583519676501086,
+          "move_log_share": 0.4225597153315394,
+          "depth_reweight_dex": 0.5802454497733691,
+          "depth_warm_dex": 1.0048579310785688,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.8256078579903918,
+          "move_gain": 1.89993993420931,
+          "move_log_share": 0.2687392870355221,
+          "depth_reweight_dex": 0.7584730879742738,
+          "depth_warm_dex": 1.0372129591093153,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.8796891363129463,
+          "move_gain": 1.464591641435815,
+          "move_log_share": 0.15267621513580243,
+          "depth_reweight_dex": 0.9196951554837447,
+          "depth_warm_dex": 1.08541170673162,
+          "move_is_a_loss": false
+        },
+        "512": {
+          "M": 512,
+          "phi": 0.9270737790738875,
+          "move_gain": 1.2074696371081963,
+          "move_log_share": 0.067167122165682,
+          "depth_reweight_dex": 1.1371162912150088,
+          "depth_warm_dex": 1.2189925100570629,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "gmm_cncv d=64",
+      "top_readable_M": 512,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "at_top": {
+        "M": 512,
+        "phi": 0.8301766619606576,
+        "move_gain": 1.1536342485802897,
+        "move_log_share": 0.0745947858335678,
+        "depth_reweight_dex": 0.7700026268999001,
+        "depth_warm_dex": 0.8320707676079905,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.3623900116157961,
+          "move_gain": 2.038707648566885,
+          "move_log_share": 0.6128269612481962,
+          "depth_reweight_dex": 0.19544488818320294,
+          "depth_warm_dex": 0.504799840436442,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.5412951881393986,
+          "move_gain": 1.8171708871264645,
+          "move_log_share": 0.4338719713464702,
+          "depth_reweight_dex": 0.33846670405038953,
+          "depth_warm_dex": 0.5978624744218963,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.6871138176597492,
+          "move_gain": 1.5494390433656218,
+          "move_log_share": 0.2737158167749967,
+          "depth_reweight_dex": 0.5046136157156997,
+          "depth_warm_dex": 0.6947881110049867,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.7679276109653599,
+          "move_gain": 1.3576208071677223,
+          "move_log_share": 0.17307908219414167,
+          "depth_reweight_dex": 0.6343765269426318,
+          "depth_warm_dex": 0.7671550123872529,
+          "move_is_a_loss": false
+        },
+        "512": {
+          "M": 512,
+          "phi": 0.8301766619606576,
+          "move_gain": 1.1536342485802897,
+          "move_log_share": 0.0745947858335678,
+          "depth_reweight_dex": 0.7700026268999001,
+          "depth_warm_dex": 0.8320707676079905,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [],
+      "bank_limited_M": []
+    },
+    {
+      "reference": "tomography r=7",
+      "top_readable_M": 512,
+      "readable_M": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "at_top": {
+        "M": 512,
+        "phi": 0.9988422091044354,
+        "move_gain": 1.7349935772326515,
+        "move_log_share": 0.07535356054546309,
+        "depth_reweight_dex": 2.9363698698854916,
+        "depth_warm_dex": 3.175667741301963,
+        "move_is_a_loss": false
+      },
+      "by_M": {
+        "32": {
+          "M": 32,
+          "phi": 0.8504445612416138,
+          "move_gain": 2.818066884906996,
+          "move_log_share": 0.352861717714386,
+          "depth_reweight_dex": 0.8251977887188809,
+          "depth_warm_dex": 1.27514908529964,
+          "move_is_a_loss": false
+        },
+        "64": {
+          "M": 64,
+          "phi": 0.9429543999725944,
+          "move_gain": 2.6098029992102894,
+          "move_log_share": 0.2509102298779243,
+          "depth_reweight_dex": 1.2437778474335035,
+          "depth_warm_dex": 1.6603855733216204,
+          "move_is_a_loss": false
+        },
+        "128": {
+          "M": 128,
+          "phi": 0.9811179648083078,
+          "move_gain": 2.426642356474088,
+          "move_log_share": 0.18255743436684155,
+          "depth_reweight_dex": 1.7239511972791628,
+          "depth_warm_dex": 2.1089569711162017,
+          "move_is_a_loss": false
+        },
+        "256": {
+          "M": 256,
+          "phi": 0.9946387181769611,
+          "move_gain": 2.275820873067388,
+          "move_log_share": 0.1359040411141288,
+          "depth_reweight_dex": 2.2707313628971155,
+          "depth_warm_dex": 2.6278694392054565,
+          "move_is_a_loss": false
+        },
+        "512": {
+          "M": 512,
+          "phi": 0.9988422091044354,
+          "move_gain": 1.7349935772326515,
+          "move_log_share": 0.07535356054546309,
+          "depth_reweight_dex": 2.9363698698854916,
+          "depth_warm_dex": 3.175667741301963,
+          "move_is_a_loss": false
+        }
+      },
+      "cond_limited_M": [],
+      "bank_limited_M": []
+    }
+  ]
+}

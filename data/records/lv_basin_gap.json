@@ -1,0 +1,14 @@
+{
+ "what": "log posterior at the generating parameter minus at the Gauss-Newton optimum from the prior mean, fresh held-out draws; a 'hit' is within 10 nats, i.e. the dominant basin.",
+ "renderer": "scripts/lv_harvest_basin_gap.py",
+ "n_draws": 300,
+ "n_diverged": 47,
+ "hit_rate": 0.30434782608695654,
+ "gap_median_nats": 31605.963916352248,
+ "gap_median_among_misses": 143305.477846495,
+ "gap_iqr": [
+  -1.0336073458747705,
+  300246.65766579786
+ ],
+ "gap_max": 316237971.21982425
+}

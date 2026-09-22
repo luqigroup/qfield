@@ -1,0 +1,303 @@
+{
+  "protocol": {
+    "beta": 0.25,
+    "n_steps": 130000,
+    "n_burn": 10000,
+    "thin": 25,
+    "n_chains": 4,
+    "n_obs": 8,
+    "M": 64,
+    "kept_per_chain": 4800,
+    "overdispersed_starts": "chains 0-1 prior draws, chains 2-3 prior x 2.5",
+    "beta_source": "darcy_stuart_pcn_beta.json best_beta",
+    "sigma": 14.148855945710286,
+    "sigma_y": 0.01,
+    "base_seed": 20260612,
+    "seed_offsets": {
+      "chain": 4000000,
+      "start": 5000000
+    },
+    "checkpoint": "/home/al289197/Documents/qfield/data/checkpoints/dq_darcy_stuart_npe_run-e9ba2c58df_d-100_dy-33_m_list-32-64-128-256-512_bandwidth-median_mmd_sigma_n_sample-4000_n_train_obs-512_n_eval_obs-64_n_mu_train-2048_bank_L-8192_jitter-1e-10_hidden-96_n_blocks-3_n_heads-4.65c56f73d857c93f842b4c1a2164c2dc874e8c1c/checkpoint.pth"
+  },
+  "rows": [
+    {
+      "obs": 0,
+      "acceptance": [
+        0.1977,
+        0.1974,
+        0.1994,
+        0.1969
+      ],
+      "tau_median": 291.9862967202538,
+      "tau_max": 499.7462323582786,
+      "post_burn_over_tau_max": 240.12187032151445,
+      "emission": "move",
+      "emission_vs_flow": 0.002798187802146135,
+      "emission_vs_pcn": 0.003167661028508739,
+      "floor_vs_flow": 0.00603303570318503,
+      "floor_vs_pcn": 0.0062354189657198855,
+      "flow_vs_pcn": 0.0007651452733494768,
+      "flow_vs_pcn_fresh2k": 0.00025204432542880184,
+      "chain_vs_chain_pairwise": [
+        0.001577485046566407,
+        0.001696729149349041,
+        0.001854905826789377,
+        0.0014203751423640387,
+        0.001575678180504969,
+        0.0021264362527437797
+      ],
+      "chain_vs_chain_max": 0.0021264362527437797,
+      "chain_vs_chain_halves": 0.0007109417499240323,
+      "secs": 2569.667202949524,
+      "power_ratio_pairwise": 0.3598251639860804,
+      "power_ratio_halves": 1.0762418628969763
+    },
+    {
+      "obs": 1,
+      "acceptance": [
+        0.1948,
+        0.1952,
+        0.1944,
+        0.1952
+      ],
+      "tau_median": 291.90700520182804,
+      "tau_max": 553.4811988490848,
+      "post_burn_over_tau_max": 216.80953255418504,
+      "emission": "move",
+      "emission_vs_flow": 0.0018252667635513253,
+      "emission_vs_pcn": 0.0027587021728769923,
+      "floor_vs_flow": 0.004466686737054082,
+      "floor_vs_pcn": 0.005439719175073465,
+      "flow_vs_pcn": 0.0007973499023865571,
+      "flow_vs_pcn_fresh2k": 0.0029373386220319375,
+      "chain_vs_chain_pairwise": [
+        0.0019911999643960065,
+        0.0017605790085817308,
+        0.0014428526440244394,
+        0.0018502566320246494,
+        0.0016786934190284875,
+        0.0012797841021985334
+      ],
+      "chain_vs_chain_max": 0.0019911999643960065,
+      "chain_vs_chain_halves": 0.0008653494092663028,
+      "secs": 2319.5462198257446,
+      "power_ratio_pairwise": 0.4004368805964791,
+      "power_ratio_halves": 0.921419595192883
+    },
+    {
+      "obs": 2,
+      "acceptance": [
+        0.1871,
+        0.1868,
+        0.185,
+        0.1859
+      ],
+      "tau_median": 316.5761510164088,
+      "tau_max": 553.873352651385,
+      "post_burn_over_tau_max": 216.65602691583098,
+      "emission": "move",
+      "emission_vs_flow": 0.0023170048206776483,
+      "emission_vs_pcn": 0.003038717014948178,
+      "floor_vs_flow": 0.006023491795914326,
+      "floor_vs_pcn": 0.007251914060682041,
+      "flow_vs_pcn": 0.0008193385213541848,
+      "flow_vs_pcn_fresh2k": 0.0011981654538886222,
+      "chain_vs_chain_pairwise": [
+        0.0017680744616201949,
+        0.0014270830922100686,
+        0.0016405181329233187,
+        0.0017538616592109868,
+        0.0019495707770220694,
+        0.0019571582451647362
+      ],
+      "chain_vs_chain_max": 0.0019571582451647362,
+      "chain_vs_chain_halves": 0.0007614502386452671,
+      "secs": 3098.30216217041,
+      "power_ratio_pairwise": 0.41863682887084086,
+      "power_ratio_halves": 1.0760237239033632
+    },
+    {
+      "obs": 3,
+      "acceptance": [
+        0.1792,
+        0.1799,
+        0.1766,
+        0.1782
+      ],
+      "tau_median": 324.3287366155555,
+      "tau_max": 641.4999847732468,
+      "post_burn_over_tau_max": 187.06157887504366,
+      "emission": "move",
+      "emission_vs_flow": 0.0022755378689045536,
+      "emission_vs_pcn": 0.004531733494341106,
+      "floor_vs_flow": 0.005908412979127475,
+      "floor_vs_pcn": 0.008111625168875203,
+      "flow_vs_pcn": 0.0023391825871075245,
+      "flow_vs_pcn_fresh2k": 0.0024495789564082937,
+      "chain_vs_chain_pairwise": [
+        0.0019479413505538723,
+        0.0017269458147115557,
+        0.0018621391284727729,
+        0.001821872563460003,
+        0.002275828868515628,
+        0.0016400762737538432
+      ],
+      "chain_vs_chain_max": 0.002275828868515628,
+      "chain_vs_chain_halves": 0.001024692187713283,
+      "secs": 3034.057755470276,
+      "power_ratio_pairwise": 1.0278376460850582,
+      "power_ratio_halves": 2.282814893248748
+    },
+    {
+      "obs": 4,
+      "acceptance": [
+        0.1908,
+        0.1888,
+        0.1919,
+        0.1895
+      ],
+      "tau_median": 303.09589207738065,
+      "tau_max": 651.6610003800973,
+      "post_burn_over_tau_max": 184.14482365832396,
+      "emission": "move",
+      "emission_vs_flow": 0.0024133750826378364,
+      "emission_vs_pcn": 0.002916122385583142,
+      "floor_vs_flow": 0.006227949966414403,
+      "floor_vs_pcn": 0.0060582644301845345,
+      "flow_vs_pcn": 0.0006956655345555784,
+      "flow_vs_pcn_fresh2k": 3.455758716608415e-05,
+      "chain_vs_chain_pairwise": [
+        0.0021074031901091583,
+        0.0017884404371182328,
+        0.0018014733215954148,
+        0.0017641400757080206,
+        0.0020593052054476146,
+        0.0015343556458393692
+      ],
+      "chain_vs_chain_max": 0.0021074031901091583,
+      "chain_vs_chain_halves": 0.0009429000509804109,
+      "secs": 2899.883605003357,
+      "power_ratio_pairwise": 0.330105571549194,
+      "power_ratio_halves": 0.7377935061433475
+    },
+    {
+      "obs": 5,
+      "acceptance": [
+        0.1793,
+        0.1777,
+        0.1767,
+        0.1773
+      ],
+      "tau_median": 323.80354950499856,
+      "tau_max": 890.6588692536849,
+      "post_burn_over_tau_max": 134.7317184418231,
+      "emission": "move",
+      "emission_vs_flow": 0.002645547298843476,
+      "emission_vs_pcn": 0.0031927064597792043,
+      "floor_vs_flow": 0.005614743762843655,
+      "floor_vs_pcn": 0.006217248202263104,
+      "flow_vs_pcn": 0.0009766302981970565,
+      "flow_vs_pcn_fresh2k": 0.0003409658923552161,
+      "chain_vs_chain_pairwise": [
+        0.001635558917480573,
+        0.0018255947578060816,
+        0.0014803008385024796,
+        0.0017712614066511811,
+        0.0016239890102678345,
+        0.0017268025960084366
+      ],
+      "chain_vs_chain_max": 0.0018255947578060816,
+      "chain_vs_chain_halves": 0.0008346961249345863,
+      "secs": 2278.458302259445,
+      "power_ratio_pairwise": 0.5349655469928755,
+      "power_ratio_halves": 1.1700429282256382
+    },
+    {
+      "obs": 6,
+      "acceptance": [
+        0.1745,
+        0.1738,
+        0.1765,
+        0.1732
+      ],
+      "tau_median": 321.4060667483643,
+      "tau_max": 726.995619445986,
+      "post_burn_over_tau_max": 165.0628928018124,
+      "emission": "move",
+      "emission_vs_flow": 0.002545930663155227,
+      "emission_vs_pcn": 0.003662475692215228,
+      "floor_vs_flow": 0.005006516715087672,
+      "floor_vs_pcn": 0.006146291263298798,
+      "flow_vs_pcn": 0.0015678882098675295,
+      "flow_vs_pcn_fresh2k": 0.0029337661733721543,
+      "chain_vs_chain_pairwise": [
+        0.0014737849108059642,
+        0.0018246978168343642,
+        0.002024439876090245,
+        0.0020347671177465276,
+        0.0024607171335107036,
+        0.0020275235133901948
+      ],
+      "chain_vs_chain_max": 0.0024607171335107036,
+      "chain_vs_chain_halves": 0.0012108283799963093,
+      "secs": 2367.0742983818054,
+      "power_ratio_pairwise": 0.6371671853361806,
+      "power_ratio_halves": 1.2948888841474864
+    },
+    {
+      "obs": 7,
+      "acceptance": [
+        0.1963,
+        0.1928,
+        0.1947,
+        0.1975
+      ],
+      "tau_median": 295.09553225183174,
+      "tau_max": 733.4822813271896,
+      "post_burn_over_tau_max": 163.60313405644592,
+      "emission": "move",
+      "emission_vs_flow": 0.0027280001381796426,
+      "emission_vs_pcn": 0.0036196441574170013,
+      "floor_vs_flow": 0.0060844077530592955,
+      "floor_vs_pcn": 0.007078311864410769,
+      "flow_vs_pcn": 0.0007597498969569294,
+      "flow_vs_pcn_fresh2k": 0.00015838030552273175,
+      "chain_vs_chain_pairwise": [
+        0.0014831876265681831,
+        0.0015860148815658448,
+        0.0015031401612977113,
+        0.0015007712129024853,
+        0.001354531171335216,
+        0.0017255530899267235
+      ],
+      "chain_vs_chain_max": 0.0017255530899267235,
+      "chain_vs_chain_halves": 0.0006839291776516987,
+      "secs": 2555.898769378662,
+      "power_ratio_pairwise": 0.4402935507415727,
+      "power_ratio_halves": 1.1108604834868494
+    }
+  ],
+  "summary": {
+    "flow_vs_pcn": 0.000808344211870371,
+    "emission_vs_flow": 0.0024796528728965317,
+    "emission_vs_pcn": 0.0031801837441439718,
+    "floor_vs_flow": 0.005965952387520901,
+    "floor_vs_pcn": 0.006226333583991495,
+    "chain_vs_chain_max": 0.0020493015772525824,
+    "chain_vs_chain_halves": 0.0008500227671004446,
+    "power_ratio_pairwise": 0.4294651898062068,
+    "power_ratio_halves": 1.093551173191913,
+    "tau_median": 309.8360215468947,
+    "tau_max": 646.580492576672,
+    "post_burn_over_tau_max": 185.6032012666838,
+    "emission_over_floor_vs_pcn": 0.5107634695835334,
+    "emission_over_floor_vs_flow": 0.4156340365845477,
+    "gap_over_emission_margin": 0.3259908758624461
+  },
+  "pilot": {
+    "file": "dq_darcy_stuart results.json pcn_audit",
+    "protocol": "2 chains x 10k post-burn at beta=0.08, thin 5",
+    "why_underpowered": "chain_vs_chain ~0.05-0.07 EXCEEDED the flow_vs_pcn gap ~0.014-0.019 it brackets"
+  },
+  "note": "MCMC as an audit of the reference, never the reference. All quantities are squared MMD at the deployed bandwidth. flow_vs_pcn is the reference flow's own distance to the exact-forward posterior; emission_vs_flow is the quadrature's error against the reference it is handed (the guarantee's currency); emission_vs_pcn and floor_vs_pcn rescore emission and i.i.d. floor against the chains. chain_vs_chain is the audit's noise floor: powered iff it sits well below flow_vs_pcn (power_ratio_*)."
+}

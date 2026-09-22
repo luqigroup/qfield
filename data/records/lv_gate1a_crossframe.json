@@ -1,0 +1,265 @@
+{
+ "what": "the DEPLOYED (flow-moment) flow audited in the LAPLACE frame, so audit and integration are of one object; differs from lv_gate1a.json in the flow only. Averaged over independent flow draws, seeded; both the Laplace frame (old z_std normalization, sigma 2.5308) and the flow's own frame (its z_std, sigma 2.5544).",
+ "renderer": "scripts/lv_gate1a_crossframe.py",
+ "sigma": 2.5308,
+ "cells": {
+  "family_q03": {
+   "laplace": {
+    "one_minus_c_rho": 0.4022538021907769,
+    "floor_512": 0.0007856519574038611,
+    "flow_chain": 0.01278455387118732,
+    "flow_chain_sd_over_draws": 0.0010499236724050992,
+    "flow_over_floor": 16.272541232421922,
+    "flow_over_floor_sd": 1.3363725024939896,
+    "verdict": "FAIL"
+   },
+   "own": {
+    "one_minus_c_rho": 0.3043231284135268,
+    "floor_512": 0.0005943811101826696,
+    "flow_chain": 0.010670344521739539,
+    "flow_chain_sd_over_draws": 0.0005160360677323907,
+    "flow_over_floor": 17.95202495324969,
+    "flow_over_floor_sd": 0.8681905580306861,
+    "verdict": "FAIL"
+   },
+   "old_flow_laplace": {
+    "flow_over_floor": 6.556185713669093,
+    "flow_over_floor_sd": 0.5904276353850098,
+    "verdict": "FAIL",
+    "single_draw_record": {
+     "flow_over_floor": 6.406617022136329,
+     "verdict": "FAIL"
+    }
+   },
+   "rhat": 1.0000344096643128
+  },
+  "family_q16": {
+   "laplace": {
+    "one_minus_c_rho": 0.3717306440028717,
+    "floor_512": 0.0007260364140681088,
+    "flow_chain": 0.0006497562758171297,
+    "flow_chain_sd_over_draws": 9.321386895872272e-05,
+    "flow_over_floor": 0.8949362087452775,
+    "flow_over_floor_sd": 0.12838731935830758,
+    "verdict": "UNRESOLVED"
+   },
+   "own": {
+    "one_minus_c_rho": 0.3754268170202588,
+    "floor_512": 0.000733255501992693,
+    "flow_chain": 0.0007436440437860459,
+    "flow_chain_sd_over_draws": 0.0001298310780875741,
+    "flow_over_floor": 1.0141676970239173,
+    "flow_over_floor_sd": 0.1770611713580676,
+    "verdict": "FAIL"
+   },
+   "old_flow_laplace": {
+    "flow_over_floor": 0.5091871007629188,
+    "flow_over_floor_sd": 0.1802660685278679,
+    "verdict": "UNRESOLVED",
+    "single_draw_record": {
+     "flow_over_floor": 1.1931891527400555,
+     "verdict": "FAIL"
+    }
+   },
+   "rhat": 1.000113374620701
+  },
+  "family_q29": {
+   "laplace": {
+    "one_minus_c_rho": 0.3702482491890118,
+    "floor_512": 0.0007231411116972886,
+    "flow_chain": 0.0007541318881276645,
+    "flow_chain_sd_over_draws": 0.00013255903536049787,
+    "flow_over_floor": 1.0428557800532696,
+    "flow_over_floor_sd": 0.18331005279089693,
+    "verdict": "FAIL"
+   },
+   "own": {
+    "one_minus_c_rho": 0.36842583489240055,
+    "floor_512": 0.0007195817087742198,
+    "flow_chain": 0.0008889466932415305,
+    "flow_chain_sd_over_draws": 0.00019496780744996856,
+    "flow_over_floor": 1.2353658832654564,
+    "flow_over_floor_sd": 0.2709460302737389,
+    "verdict": "FAIL"
+   },
+   "old_flow_laplace": {
+    "flow_over_floor": 0.5970573468926619,
+    "flow_over_floor_sd": 0.1522826358653246,
+    "verdict": "UNRESOLVED",
+    "single_draw_record": {
+     "flow_over_floor": 0.6345175936126408,
+     "verdict": "UNRESOLVED"
+    }
+   },
+   "rhat": 1.0001209129737747
+  },
+  "family_q43": {
+   "laplace": {
+    "one_minus_c_rho": 0.36745346867464623,
+    "floor_512": 0.0007176825560051684,
+    "flow_chain": 0.0006089709064798221,
+    "flow_chain_sd_over_draws": 0.00015940729693542406,
+    "flow_over_floor": 0.8485240464384878,
+    "flow_over_floor_sd": 0.22211393547410685,
+    "verdict": "UNRESOLVED"
+   },
+   "own": {
+    "one_minus_c_rho": 0.39334829815258987,
+    "floor_512": 0.0007682583948292771,
+    "flow_chain": 0.0006528459231223785,
+    "flow_chain_sd_over_draws": 0.00010893001063164394,
+    "flow_over_floor": 0.8497738879474976,
+    "flow_over_floor_sd": 0.14178824646081536,
+    "verdict": "UNRESOLVED"
+   },
+   "old_flow_laplace": {
+    "flow_over_floor": 0.13616060281747303,
+    "flow_over_floor_sd": 0.06967360885712835,
+    "verdict": "UNRESOLVED",
+    "single_draw_record": {
+     "flow_over_floor": 0.35713084235120435,
+     "verdict": "UNRESOLVED"
+    }
+   },
+   "rhat": 1.000016167156935
+  },
+  "family_q56": {
+   "laplace": {
+    "one_minus_c_rho": 0.370138517581603,
+    "floor_512": 0.0007229267921515683,
+    "flow_chain": 0.0010594578924006948,
+    "flow_chain_sd_over_draws": 0.0003054245810800544,
+    "flow_over_floor": 1.4655120046769128,
+    "flow_over_floor_sd": 0.4224834165725861,
+    "verdict": "FAIL"
+   },
+   "own": {
+    "one_minus_c_rho": 0.37587545265429045,
+    "floor_512": 0.000734131743465411,
+    "flow_chain": 0.0010832618855031266,
+    "flow_chain_sd_over_draws": 0.00015441903864040887,
+    "flow_over_floor": 1.4755687860460498,
+    "flow_over_floor_sd": 0.2103424079055429,
+    "verdict": "FAIL"
+   },
+   "old_flow_laplace": {
+    "flow_over_floor": 0.9592217603860831,
+    "flow_over_floor_sd": 0.24617176616351094,
+    "verdict": "UNRESOLVED",
+    "single_draw_record": {
+     "flow_over_floor": 0.9311362960223353,
+     "verdict": "UNRESOLVED"
+    }
+   },
+   "rhat": 1.000057132810796
+  },
+  "family_q70": {
+   "laplace": {
+    "one_minus_c_rho": 0.3880184708519152,
+    "floor_512": 0.0007578485758826469,
+    "flow_chain": 0.00017999682127211222,
+    "flow_chain_sd_over_draws": 6.26360227158435e-05,
+    "flow_over_floor": 0.2375102718408813,
+    "flow_over_floor_sd": 0.08264978613028721,
+    "verdict": "UNRESOLVED"
+   },
+   "own": {
+    "one_minus_c_rho": 0.39875104440036835,
+    "floor_512": 0.0007788106335944694,
+    "flow_chain": 0.00021171463355423858,
+    "flow_chain_sd_over_draws": 0.00014320420005054828,
+    "flow_over_floor": 0.2718435322038495,
+    "flow_over_floor_sd": 0.18387550692472365,
+    "verdict": "UNRESOLVED"
+   },
+   "old_flow_laplace": {
+    "flow_over_floor": 0.5066903469598262,
+    "flow_over_floor_sd": 0.03953753131268552,
+    "verdict": "UNRESOLVED",
+    "single_draw_record": {
+     "flow_over_floor": 0.36746389719247124,
+     "verdict": "UNRESOLVED"
+    }
+   },
+   "rhat": 1.0000803459561993
+  },
+  "family_q97": {
+   "laplace": {
+    "one_minus_c_rho": 0.4502905105005751,
+    "floor_512": 0.0008794736533214358,
+    "flow_chain": 0.010940571171166535,
+    "flow_chain_sd_over_draws": 0.0008088049507228724,
+    "flow_over_floor": 12.439907812869869,
+    "flow_over_floor_sd": 0.9196465950609496,
+    "verdict": "FAIL"
+   },
+   "own": {
+    "one_minus_c_rho": 0.3456005986140378,
+    "floor_512": 0.0006750011691680426,
+    "flow_chain": 0.0046826019691257785,
+    "flow_chain_sd_over_draws": 0.0002774677117031812,
+    "flow_over_floor": 6.937176086520285,
+    "flow_over_floor_sd": 0.4110625645955069,
+    "verdict": "FAIL"
+   },
+   "old_flow_laplace": {
+    "flow_over_floor": 22.091434617561045,
+    "flow_over_floor_sd": 1.0378413432758233,
+    "verdict": "FAIL",
+    "single_draw_record": {
+     "flow_over_floor": 25.832771350843352,
+     "verdict": "FAIL"
+    }
+   },
+   "rhat": 1.000048661318783
+  },
+  "riabiz": {
+   "laplace": {
+    "one_minus_c_rho": 0.3893450766142619,
+    "floor_512": 0.0007604396027622302,
+    "flow_chain": 0.0005471815492014698,
+    "flow_chain_sd_over_draws": 4.6620011231765915e-05,
+    "flow_over_floor": 0.7195595116481056,
+    "flow_over_floor_sd": 0.061306658756885894,
+    "verdict": "UNRESOLVED"
+   },
+   "own": {
+    "one_minus_c_rho": 0.4007186435615251,
+    "floor_512": 0.0007826536007061037,
+    "flow_chain": 0.0006110855440013737,
+    "flow_chain_sd_over_draws": 0.00026858125067261905,
+    "flow_over_floor": 0.7807867279343726,
+    "flow_over_floor_sd": 0.34316746314117413,
+    "verdict": "UNRESOLVED"
+   },
+   "old_flow_laplace": {
+    "flow_over_floor": 0.5320854705171797,
+    "flow_over_floor_sd": 0.13482757855785882,
+    "verdict": "UNRESOLVED",
+    "single_draw_record": {
+     "flow_over_floor": 0.340934630609435,
+     "verdict": "UNRESOLVED"
+    }
+   },
+   "rhat": 1.000038862994569
+  }
+ },
+ "summary": {
+  "laplace": {
+   "PASS": 0,
+   "FAIL": 4,
+   "UNRESOLVED": 4
+  },
+  "own": {
+   "PASS": 0,
+   "FAIL": 5,
+   "UNRESOLVED": 3
+  },
+  "old_flow_laplace": {
+   "PASS": 0,
+   "FAIL": 2,
+   "UNRESOLVED": 6
+  }
+ },
+ "n_draws_averaged": 6
+}

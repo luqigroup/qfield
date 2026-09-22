@@ -1,0 +1,34 @@
+# Raw inputs fetched on first use, and everything the scripts produce.
+data/*
+logs/
+plots/
+results/
+
+# Lean build tree, restored by `lake exe cache get`.
+formal/.lake/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+sdist/
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Editor and OS
+.DS_Store
+.vscode/
+.idea/
+
+# The records the figures read are small and ship with the repository.
+!data/records/
+!data/records/*.json

@@ -1,0 +1,63 @@
+{
+ "what": "The deployed configuration of the Lotka-Volterra quadrature field, and the sweep that chose it. Every value was selected by the measurement named beside it, not by default.",
+ "checkpoint": "data/lotka_volterra/quadfield_final.pth (= quadfield_sw_b8long.pth)",
+ "selected_by": "scripts/lv_sweep_score.py over 21 arms; paper/figures/diagnostics/lv_train_sweep.json",
+ "architecture": {
+  "hidden": 64,
+  "n_blocks": 8,
+  "n_heads": 4,
+  "delta_scale": 0.5,
+  "n_params": 628932,
+  "cond_kind": "vector",
+  "cond_dim": 43,
+  "why_depth": "8 blocks. Depth is the lever that pays and it SATURATES here: 3 blocks reaches 0.47 of a per-instance oracle, 6 reaches 0.81, 8 reaches 0.83, and 12 reaches 0.79 with half again the parameters. 6/8/12 are within single-seed noise of one another; 3 is not.",
+  "why_not_wider": "Width HURTS. At 3 blocks, hidden 128 (803k params) and hidden 192 (1.66M) score BELOW hidden 64. The map was too shallow, never too small."
+ },
+ "optimization": {
+  "lr": 0.0001,
+  "optimizer": "Adam",
+  "grad_clip": 5.0,
+  "batch_obs": 8,
+  "n_mu": 2048,
+  "n_steps_budget": 200000,
+  "n_steps_taken": 87400,
+  "stopped_on": "patience (converged), not the step budget",
+  "why_lr": "1e-4. The learning rate outweighs the schedule: 1e-3 costs a factor of about 2.4, 1e-4 beats 3e-4, and tripling the steps at a fixed rate buys only 1.21x.",
+  "why_not_bigger_batch": "32 observations per step is indistinguishable from 8. Measured twice; the first time on a validation signal too noisy to resolve it, which is why it was re-measured."
+ },
+ "validation": {
+  "val_m": [
+   32,
+   64,
+   128
+  ],
+  "val_every": 200,
+  "patience": 30,
+  "n_val_obs": 64,
+  "common_random_numbers": true,
+  "why": "Two defects were found here and both mattered more than any architecture choice. (1) The validation draws were unseeded, so the signal carried a fresh Monte-Carlo error of +-1e-3 against a total achievable improvement of 1.5e-3: early stopping ran on noise and the map stopped learning at step 200 of 8000. (2) Validation ran at M=128 ALONE, which the scoring bank resolves on one member of eight, while every reported number is at M=32."
+ },
+ "data": {
+  "n_train_obs": 41952,
+  "n_val_obs": 64,
+  "why_all": "Data is NOT the binding constraint. Training on 1,000 observations scores 180x where all 41,952 score 168x -- a fortyfold cut with no cost. Independently, the map scores BETTER on observations it never saw (200x) than on ones it trained on (109x), which rules out memorization."
+ },
+ "fixed_throughout": {
+  "sigma": 2.5544,
+  "m_list": [
+   32,
+   64,
+   128,
+   256,
+   512
+  ],
+  "base_seed": 20260612,
+  "dtype": "float64",
+  "why_float64": "The ridged node Gram reaches a condition number of 2.45e12 and the score is a difference of order-one terms yielding a result near 1e-12. Re-solving in single precision BREAKS the never-worse inequality on 243 of 7040 draws; 80-bit extended changes nothing. The operating point is bracketed on both sides."
+ },
+ "gain": {
+  "baseline_fraction_of_oracle": 0.47,
+  "final_fraction_of_oracle": 0.83,
+  "note": "Oracle depths are comparable only WITHIN one scoring run, since each run draws its own observations and seeds. Always quote the fraction, never the absolute multiple, across runs."
+ }
+}

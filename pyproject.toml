@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qfield"
+version = "1.0.0"
+description = "Amortized quadrature for posterior expectations in inverse problems"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Ali Siahkoohi", email = "alisk@ucf.edu" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "torch>=2.0",
+    "tqdm",
+    "projorg>=1.1",
+]
+
+[project.optional-dependencies]
+# The compression peers of the Lotka-Volterra benchmark. Only that one
+# experiment needs them.
+peers = ["goodpoints"]
+test = ["pytest"]
+
+[project.urls]
+Repository = "https://github.com/luqigroup/qfield"
+
+[tool.setuptools.packages.find]
+include = ["qfield*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

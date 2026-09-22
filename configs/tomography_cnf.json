@@ -1,0 +1,20 @@
+{
+    "experiment_name": "tomography_cnf",
+    "hidden_ch": 32,
+    "n_flow_layers": 8,
+    "cond_feat_ch": 1,
+    "model_seed": 20260612,
+    "batch_size": 16,
+    "lr": 1.5e-4,
+    "weight_decay": 0.0,
+    "grad_clip": 5.0,
+    "dequant_sigma": 0.02,
+    "epochs": 40,
+    "steps_per_epoch": 1250,
+    "warmup_steps": 500,
+    "log_every": 50,
+    "ckpt_every": 250,
+    "val_batches": 30,
+    "base_seed": 20260612,
+    "phase": "train"
+}
